@@ -27,8 +27,10 @@
 <meta property="og:description" content="渲染流水线 参考书籍《Unity Shader入门精要》 渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。 当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如&quot;屏幕后处理阶段&quot;         应用阶段:              准备基本场景数据：             物体Transfo">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/.com//10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png">
+<meta property="og:image" content="http://example.com/.com//10/20/UnityShader%E5%9F%BA%E7%A1%80/image2.png">
+<meta property="og:image" content="http://example.com/.com//10/20/UnityShader%E5%9F%BA%E7%A1%80/image3.png">
 <meta property="article:published_time" content="2024-10-20T02:58:47.000Z">
-<meta property="article:modified_time" content="2024-10-20T06:54:06.646Z">
+<meta property="article:modified_time" content="2024-10-20T06:56:02.069Z">
 <meta property="article:author" content="666柯南君">
 <meta property="article:tag" content="原创">
 <meta property="article:tag" content="UnityShader">
@@ -319,7 +321,7 @@
 <p>参考书籍《Unity Shader入门精要》</p>
 <p><b>渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。</b></p>
 <p>当前，游戏引擎的渲染流水线一般分为三个阶段：<b>应用阶段、几何阶段、光栅化阶段</b>。另外，游戏引擎还会有一些其他阶段，如<b>"屏幕后处理阶段"</b></p> 
-<img src="/.com//10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png" srcset="/img/loading.gif" lazyload class title="图片描述"><br>
+<img src="/.com//10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png" srcset="/img/loading.gif" lazyload class title="渲染流水线"><br>
 <ul>
 <p>
     <b>应用阶段:</b>
@@ -337,10 +339,10 @@
     </ul>
     <b>几何阶段:</b><br>
         &nbsp; &nbsp; &nbsp; &nbsp; 几何阶段负责处理每个渲染图元，进行逐顶点、逐多边形的操作。这一阶段主要任务是将顶点坐标变换到屏幕空间下。<br>
-        ![渲染流水线](image2.png)<br>
+        <img src="/.com//10/20/UnityShader%E5%9F%BA%E7%A1%80/image2.png" srcset="/img/loading.gif" lazyload class title="几何阶段"><br>
     <ul>
         <li>顶点着色器：对每个顶点进行处理，如位置、颜色、法线、纹理坐标等。可以利用这一阶段对顶点位置进行变换实现顶点动画，如布料、水面、旗帜等。但是无论怎么变换，顶点着色器都必须把顶点坐标变换到齐次裁剪空间下，然后由硬件设备进行透视除法，得到归一化的设备坐标。</li><br>
-        <li>裁剪：将物体的几何形状处于摄像机视角之外的部分裁剪掉，以节省渲染时间和资源。这一步不可编程，由硬件控制，但可以配置。<br>![渲染流水线](image3.png)<br><br></li><br>
+        <li>裁剪：将物体的几何形状处于摄像机视角之外的部分裁剪掉，以节省渲染时间和资源。这一步不可编程，由硬件控制，但可以配置。<br><img src="/.com//10/20/UnityShader%E5%9F%BA%E7%A1%80/image3.png" srcset="/img/loading.gif" lazyload class title="裁剪"><br><br></li><br>
         <li>屏幕映射：将物体的几何形状从齐次裁剪空间映射到屏幕空间。</li><br>
     </ul>
     <b>光栅化阶段:</b><br>
