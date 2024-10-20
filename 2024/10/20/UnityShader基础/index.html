@@ -19,23 +19,23 @@
   <meta name="author" content="666柯南君">
   <meta name="keywords" content="666柯南君,666kenanjun,kenanjun,kenan,柯南">
   
-    <meta name="description" content="渲染流水线参考书籍《Unity Shader入门精要》- 渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。- 当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段 应用阶段: 准备基本场景数据： 物体Transform数据：位置、旋转、缩放。 物体网格数据：顶点、法线、切线、UV坐">
+    <meta name="description" content="渲染流水线参考书籍《Unity Shader入门精要》- 渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。- 当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段  应用阶段: 准备基本场景数据： 物体Transform数据：位置、旋转、缩放。 物体网格数据：顶点、法线、切线、UV">
 <meta property="og:type" content="article">
 <meta property="og:title" content="渲染流水线">
 <meta property="og:url" content="http://example.com/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="666柯南君的个人Blog">
-<meta property="og:description" content="渲染流水线参考书籍《Unity Shader入门精要》- 渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。- 当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段 应用阶段: 准备基本场景数据： 物体Transform数据：位置、旋转、缩放。 物体网格数据：顶点、法线、切线、UV坐">
+<meta property="og:description" content="渲染流水线参考书籍《Unity Shader入门精要》- 渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。- 当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段  应用阶段: 准备基本场景数据： 物体Transform数据：位置、旋转、缩放。 物体网格数据：顶点、法线、切线、UV">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/UnityShader%E5%9F%BA%E7%A1%80/image1.png">
-<meta property="og:image" content="http://example.com/UnityShader%E5%9F%BA%E7%A1%80/image2.png">
-<meta property="og:image" content="http://example.com/UnityShader%E5%9F%BA%E7%A1%80/image1.png">
+<meta property="og:image" content="http://example.com/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png">
+<meta property="og:image" content="http://example.com/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/image2.png">
+<meta property="og:image" content="http://example.com/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png">
 <meta property="article:published_time" content="2024-10-20T02:58:47.000Z">
-<meta property="article:modified_time" content="2024-10-20T07:30:02.899Z">
+<meta property="article:modified_time" content="2024-10-20T07:45:59.968Z">
 <meta property="article:author" content="666柯南君">
 <meta property="article:tag" content="原创">
 <meta property="article:tag" content="UnityShader">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/UnityShader%E5%9F%BA%E7%A1%80/image1.png">
+<meta name="twitter:image" content="http://example.com/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -317,7 +317,8 @@
             
               <div class="markdown-body">
                 
-                <h2 id="渲染流水线"><a href="#渲染流水线" class="headerlink" title="渲染流水线"></a>渲染流水线</h2><h2 id="参考书籍《Unity-Shader入门精要》-渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。-当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段"><a href="#参考书籍《Unity-Shader入门精要》-渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。-当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段" class="headerlink" title="参考书籍《Unity Shader入门精要》- 渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。- 当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段"></a>参考书籍《Unity Shader入门精要》<br>- <strong>渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。</strong><br>- 当前，游戏引擎的渲染流水线一般分为三个阶段：<strong>应用阶段、几何阶段、光栅化阶段</strong>。另外，游戏引擎还会有一些其他阶段，如<strong>屏幕后处理阶段</strong></h2><p><img src="/UnityShader%E5%9F%BA%E7%A1%80/image1.png" srcset="/img/loading.gif" lazyload alt="渲染流水线"></p>
+                <h2 id="渲染流水线"><a href="#渲染流水线" class="headerlink" title="渲染流水线"></a>渲染流水线</h2><h2 id="参考书籍《Unity-Shader入门精要》-渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。-当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段"><a href="#参考书籍《Unity-Shader入门精要》-渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。-当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段" class="headerlink" title="参考书籍《Unity Shader入门精要》- 渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。- 当前，游戏引擎的渲染流水线一般分为三个阶段：应用阶段、几何阶段、光栅化阶段。另外，游戏引擎还会有一些其他阶段，如屏幕后处理阶段"></a>参考书籍《Unity Shader入门精要》<br>- <strong>渲染流水线是指将场景中的物体从摄像机视角投射到屏幕上，经过各种处理后最终呈现在屏幕上的过程。</strong><br>- 当前，游戏引擎的渲染流水线一般分为三个阶段：<strong>应用阶段、几何阶段、光栅化阶段</strong>。另外，游戏引擎还会有一些其他阶段，如<strong>屏幕后处理阶段</strong></h2><img src="/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png" srcset="/img/loading.gif" lazyload class="" title="渲染流水线">
+
 <h4 id="应用阶段"><a href="#应用阶段" class="headerlink" title="应用阶段:"></a>应用阶段:</h4><ul>
 <li>准备基本场景数据：<ul>
 <li>物体Transform数据：位置、旋转、缩放。</li>
@@ -332,10 +333,11 @@
 </ul>
 <h4 id="几何阶段"><a href="#几何阶段" class="headerlink" title="几何阶段:"></a>几何阶段:</h4><pre><code class="hljs">几何阶段负责处理每个渲染图元，进行逐顶点、逐多边形的操作。这一阶段主要任务是将顶点坐标变换到屏幕空间下。
 </code></pre>
-<p><img src="/UnityShader%E5%9F%BA%E7%A1%80/image2.png" srcset="/img/loading.gif" lazyload alt="几何阶段"></p>
+<img src="/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/image2.png" srcset="/img/loading.gif" lazyload class="" title="几何阶段">
+
 <ul>
 <li>顶点着色器：对每个顶点进行处理，如位置、颜色、法线、纹理坐标等。可以利用这一阶段对顶点位置进行变换实现顶点动画，如布料、水面、旗帜等。但是无论怎么变换，顶点着色器都必须把顶点坐标变换到齐次裁剪空间下，然后由硬件设备进行透视除法，得到归一化的设备坐标。</li>
-<li>裁剪：将物体的几何形状处于摄像机视角之外的部分裁剪掉，以节省渲染时间和资源。这一步不可编程，由硬件控制，但可以配置。<br><img src="/UnityShader%E5%9F%BA%E7%A1%80/image1.png" srcset="/img/loading.gif" lazyload alt="裁剪阶段"></li>
+<li>裁剪：将物体的几何形状处于摄像机视角之外的部分裁剪掉，以节省渲染时间和资源。这一步不可编程，由硬件控制，但可以配置。<img src="/2024/10/20/UnityShader%E5%9F%BA%E7%A1%80/image1.png" srcset="/img/loading.gif" lazyload class="" title="裁剪阶段"></li>
 <li>屏幕映射：将物体的几何形状从齐次裁剪空间映射到屏幕空间。</li>
 </ul>
 <h4 id="光栅化阶段"><a href="#光栅化阶段" class="headerlink" title="光栅化阶段:"></a>光栅化阶段:</h4><pre><code class="hljs">光栅化阶段负责将渲染图元转化为屏幕上的点、线、面。这一阶段的输出是渲染像素，即“片元”。
